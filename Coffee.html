@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>กาแฟ</title>
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Sriracha&display=swap" rel="stylesheet">
+        <style>
+            body{
+                font-family: "Itim", cursive;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">  
+            <header>
+                <ul class="nav nav-tabs justify-content-end">
+                    <li class="nav-item web-menu">
+                      <a class="nav-link active" aria-current="page" href="../index.html">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#product" id="productcategory" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          หมวดหมู่สินค้า
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="./Coffee.html">เครื่องดื่ม(กาแฟ)</a></li>
+                          <li><a class="dropdown-item" href="./Tea.html">เครื่องดื่ม(ชา)</a></li>
+                          <li><a class="dropdown-item" href="./light-meal.html">อาหารว่าง</a></li>
+                          <li><a class="dropdown-item" href="./birthday-gift.html">เบเกอรี่</a></li>
+                          <li><a class="dropdown-item" href="./Souvenir.html">ของที่ระลึก</a></li>
+                        </ul>
+                    <li class="nav-item web-menu">
+                        <a class="nav-link" href="../service.html">บริการ</a>
+                    </li>
+                    <li class="nav-item web-menu">
+                        <a class="nav-link" href="../about.html" tabindex="-1" aria-disabled="true">เกี่ยวกับเรา</a>
+                    </li>
+                </ul>
+
+                <!-- Slider section -->
+                <div id="carouselExampleIndicators" class="carousel slide"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0" class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"></button>
+                    <button type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://res.cloudinary.com/dpaf7xuku/image/upload/c_scale,h_500,w_1200/Napoleons-Bakery-Donuts-Pastries-scaled_lwxtrs" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/dpaf7xuku/image/upload/c_scale,h_500,w_1200/Simply-Recipes-Cold-Brew-Coffee-LEAD-16-428691bcdd594281b2f5dc6dbc8235e4_mxkbfg" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/dpaf7xuku/image/upload/c_scale,h_500,w_1200/Iced_Latte_njluwn" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/dpaf7xuku/image/upload/c_scale,h_500,w_1200/21667-easy-iced-coffee-ddmfs-2x1-0091-18b743db97f5495e9e152b034e211b4c_xhs3mx" alt="Slide 4">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </header>
+        </div>
+        <br/>
+
+         <!-- สร้าง Card สินค้า-->
+         <div class="container">
+            <div style="text-align: center; margin: 20px 0;">
+                <h1 style="font-size: 24px; font-weight: bold;">[ เมนู กาแฟ ]</h1>
+            </div>
+         <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://www.starbucks.co.th/stb-media/2020/08/1.Espresso-1080-768x768.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">เอสเพรสโซ่</h5>
+                        <p class="card-text">"เป็นกาแฟรูปแบบเข้มข้นที่เสิร์ฟเป็นช็อต"</p>
+                        <a href="#" class="btn btn-primary">รายละเอียดเพิ่มเติม...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://www.starbucks.co.th/stb-media/2020/08/45.Iced-Cappuccino1080-768x768.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">คาปูชิโน</h5>
+                        <p class="card-text">"เครื่องดื่มกาแฟที่ผสมกันด้วยเอสเพรสโซและนมฟอง"</p>
+                        <a href="#" class="btn btn-primary">รายละเอียดเพิ่มเติม...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://www.starbucks.co.th/stb-media/2020/09/127.Mocha_Iced_Reserve_BlackEG.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">มอคค่า</h5>
+                        <p class="card-text">"เครื่องดื่มที่มีส่วนผสมของกาแฟและช็อคโกแลต"</p>
+                        <a href="#" class="btn btn-primary">รายละเอียดเพิ่มเติม...</a>
+                    </div>
+                </div>
+            </div>
+         </div>
+         </div>
+         <br>
+    <!-- สร้าง Card สินค้าแนะนำ-->
+    <div class="container">
+     <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="https://www.starbucks.co.th/stb-media/2020/09/121.Latte_Iced_Reserve_BlackEG1080-768x768.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">ลาเต้</h5>
+                    <p class="card-text">"กาแฟนมที่มีโฟมที่นุ่มนวลเป็นไฮไลต์ที่แท้จริงของเครื่องดื่ม"</p>
+                    <a href="#" class="btn btn-primary">รายละเอียดเพิ่มเติม...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://www.starbucks.co.th/stb-media/2020/08/40.Iced-Caffe-Americano1080-768x768.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">อเมริกาโน่</h5>
+                    <p class="card-text">"กาแฟเอสเพรสโซ่ที่ถูกเติมน้ำลงไปเพื่อเจือจางความเข้มข้นของกาแฟ"</p>
+                    <a href="#" class="btn btn-primary">รายละเอียดเพิ่มเติม...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://www.starbucks.co.th/stb-media/2020/08/15.Coffeee-of-the-Week1080-768x768.png" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">กาแฟดำ</h5>
+                    <p class="card-text">"การนำเมล็ดกาแฟที่ผ่านการคั่วและบด นำมาผ่านวิธีการชงกาแฟต่าง ๆ ที่ผ่านน้ำร้อนอย่างเดียว สามารถดื่มได้ทั้งแบบร้อน และแบบเย็นที่เพิ่มเพียงน้ำแข็ง"</p>
+                    <a href="#" class="btn btn-primary">รายละเอียดเพิ่มเติม...</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     </div>
+     <br>
+     <br>
+     <br>
+     <section style="text-align: center;">
+        <p>Copyright &copy; Mr.Ko</p>
+    </section>
+    </body>
+</html>
